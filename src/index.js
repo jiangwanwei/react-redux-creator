@@ -1,6 +1,6 @@
 import { buildRedux, buildListRedux } from './libs/helper'
 import config from './libs/settings'
-import connectSagas from './libs/connectSagas'
+import connectSagas, { reducers, sagas, } from './libs/connectSagas'
 import { myConnect } from './libs/store'
 import Provider from './libs/provider'
 
@@ -10,5 +10,7 @@ export default {
   connect: myConnect,
   Provider,
   config,
+  reducers, 
+  sagas,
 }
 
